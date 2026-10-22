@@ -1,19 +1,28 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FC ÉLITE | Site officiel</title>
+
+    <title>JA Pléchâtel | Site du club</title>
+
+    <meta name="description"
+          content="Découvrez la JA Pléchâtel : matchs, résultats, équipe Seniors, staff et actualités du club.">
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <!-- HEADER -->
+
     <header class="header">
+
         <a href="#accueil" class="logo">
-            ⚽ FC <span>ÉLITE</span>
+            ⚽ JA <span>PLÉCHÂTEL</span>
         </a>
 
         <button
@@ -31,16 +40,19 @@
             <a href="#actualites">Actualités</a>
             <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
     <main>
 
         <!-- ACCUEIL -->
+
         <section class="hero" id="accueil">
+
             <div class="hero-content">
 
                 <p class="eyebrow">
-                    BIENVENUE SUR LE SITE OFFICIEL
+                    BIENVENUE À LA JEANNE D'ARC PLÉCHÂTEL
                 </p>
 
                 <h1>
@@ -50,7 +62,8 @@
 
                 <p>
                     Plus qu'un club, une famille.
-                    Ensemble, défendons nos couleurs.
+                    Ensemble, défendons les couleurs
+                    de Pléchâtel.
                 </p>
 
                 <a href="#matchs" class="btn">
@@ -58,78 +71,153 @@
                 </a>
 
             </div>
+
         </section>
 
         <!-- MATCHS -->
+
         <section class="section" id="matchs">
 
             <div class="section-heading">
-                <p class="eyebrow">SUR LE TERRAIN</p>
-                <h2>NOS <span>MATCHS</span></h2>
+
+                <p class="eyebrow">
+                    SAISON 2026 / 2027 • SENIORS
+                </p>
+
+                <h2>
+                    NOS <span>MATCHS</span>
+                </h2>
+
             </div>
 
             <div class="match-grid">
 
                 <!-- PROCHAIN MATCH -->
+
                 <article class="card match-card">
 
                     <span class="tag">
                         PROCHAIN MATCH
                     </span>
 
-                    <p class="match-date">
-                        Date à confirmer
+                    <p class="match-date" id="date-prochain-match">
+                        Calendrier en attente
                     </p>
 
                     <div class="versus">
-                        <strong>FC ÉLITE</strong>
+
+                        <strong id="equipe-domicile">
+                            JA PLÉCHÂTEL
+                        </strong>
+
                         <span>VS</span>
-                        <strong>ADVERSAIRE</strong>
+
+                        <strong id="equipe-exterieur">
+                            À CONFIRMER
+                        </strong>
+
                     </div>
 
-                    <p class="muted">
-                        Stade à confirmer
+                    <p class="muted" id="prochain-match" aria-live="polite">
+                        En attente de synchronisation FFF...
                     </p>
+
+                    <a
+                        href="https://epreuves.fff.fr/competition/club/519202-jeanne-d-arc-plechatel/equipe/2026_6255_SEM_1/equipe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn"
+                        style="display:inline-block; margin-top:25px;"
+                    >
+                        VOIR LE CALENDRIER FFF →
+                    </a>
 
                 </article>
 
                 <!-- DERNIER RÉSULTAT -->
+
                 <article class="card match-card">
 
                     <span class="tag">
                         DERNIER RÉSULTAT
                     </span>
 
-                    <p class="match-date">
-                        Match à renseigner
+                    <p class="match-date" id="date-dernier-match">
+                        Résultat en attente
                     </p>
 
                     <div class="versus">
-                        <strong>FC ÉLITE</strong>
-                        <span>– : –</span>
-                        <strong>ADVERSAIRE</strong>
+
+                        <strong id="resultat-domicile">
+                            JA PLÉCHÂTEL
+                        </strong>
+
+                        <span id="score-dernier-match">
+                            – : –
+                        </span>
+
+                        <strong id="resultat-exterieur">
+                            À CONFIRMER
+                        </strong>
+
                     </div>
 
-                    <p class="muted">
-                        Résultat à venir
+                    <p class="muted" id="dernier-resultat" aria-live="polite">
+                        En attente de synchronisation FFF...
                     </p>
+
+                    <a
+                        href="https://epreuves.fff.fr/competition/club/519202-jeanne-d-arc-plechatel/equipe/2026_6255_SEM_1/equipe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn"
+                        style="display:inline-block; margin-top:25px;"
+                    >
+                        VOIR LES RÉSULTATS FFF →
+                    </a>
 
                 </article>
 
             </div>
+
+            <div style="text-align:center; margin-top:45px;">
+
+                <p class="muted" id="maj-matchs"
+                   style="margin-bottom:20px;">
+                    Données en attente de synchronisation.
+                </p>
+
+                <a
+                    href="https://epreuves.fff.fr/competition/club/519202-jeanne-d-arc-plechatel/equipe/2026_6255_SEM_1/equipe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn"
+                >
+                    NOTRE ÉQUIPE SUR LA FFF →
+                </a>
+
+            </div>
+
         </section>
 
         <!-- ÉQUIPES -->
+
         <section class="section alternate" id="equipes">
 
             <div class="section-heading">
+
                 <p class="eyebrow">NOTRE CLUB</p>
-                <h2>NOS <span>ÉQUIPES</span></h2>
+
+                <h2>
+                    NOS <span>ÉQUIPES</span>
+                </h2>
+
             </div>
 
             <div class="team-grid">
 
                 <!-- SENIORS -->
+
                 <article class="team-card">
 
                     <div class="team-image seniors"></div>
@@ -143,9 +231,10 @@
                         <h3>SENIORS</h3>
 
                         <p>
-                            Découvrez notre équipe Seniors,
-                            les joueurs qui défendent les
-                            couleurs du club chaque week-end.
+                            Découvrez les joueurs de
+                            la JA Pléchâtel qui défendent
+                            les couleurs du club chaque
+                            week-end.
                         </p>
 
                     </div>
@@ -153,6 +242,7 @@
                 </article>
 
                 <!-- STAFF -->
+
                 <article class="team-card">
 
                     <div class="team-image staff"></div>
@@ -166,9 +256,9 @@
                         <h3>STAFF</h3>
 
                         <p>
-                            Découvrez les entraîneurs et
-                            les membres du staff qui
-                            accompagnent notre équipe
+                            Découvrez les entraîneurs
+                            et les membres du staff
+                            qui accompagnent notre équipe
                             tout au long de la saison.
                         </p>
 
@@ -177,57 +267,76 @@
                 </article>
 
             </div>
+
         </section>
 
         <!-- ACTUALITÉS -->
+
         <section class="section" id="actualites">
 
             <div class="section-heading">
-                <p class="eyebrow">LA VIE DU CLUB</p>
+
+                <p class="eyebrow">
+                    LA VIE DU CLUB
+                </p>
 
                 <h2>
                     DERNIÈRES <span>ACTUALITÉS</span>
                 </h2>
+
             </div>
 
             <div class="news-grid">
 
-                <!-- ACTUALITÉ 1 -->
                 <article class="card news-card">
 
                     <span class="tag">CLUB</span>
 
                     <h3>
-                        Bienvenue sur notre nouveau site !
+                        Bienvenue sur le site de la JA Pléchâtel !
                     </h3>
 
                     <p>
-                        Retrouvez prochainement toutes
-                        les informations du club.
+                        Retrouvez ici les informations
+                        de notre club, les matchs,
+                        les résultats et les actualités.
                     </p>
 
                 </article>
 
-                <!-- ACTUALITÉ 2 -->
                 <article class="card news-card">
 
-                    <span class="tag">MATCHS</span>
+                    <span class="tag">
+                        SAISON 2026 / 2027
+                    </span>
 
                     <h3>
-                        Le calendrier arrive bientôt
+                        Suivez notre équipe Seniors
                     </h3>
 
                     <p>
-                        Suivez les prochaines rencontres
-                        de notre équipe Seniors.
+                        Consultez les rencontres
+                        et les résultats officiels
+                        de notre équipe sur la FFF.
                     </p>
+
+                    <a
+                        href="https://epreuves.fff.fr/competition/club/519202-jeanne-d-arc-plechatel/equipe/2026_6255_SEM_1/equipe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="color:#24c768; display:inline-block; margin-top:20px;"
+                    >
+                        VOIR LES MATCHS →
+                    </a>
 
                 </article>
 
             </div>
+
         </section>
 
         <!-- CONTACT -->
+
         <section class="contact-section" id="contact">
 
             <h2 class="contact-title">
@@ -235,7 +344,8 @@
             </h2>
 
             <p class="contact-subtitle">
-                Une question ? Envoie-nous un message !
+                Une question ?
+                Envoyez-nous un message !
             </p>
 
             <form
@@ -247,7 +357,7 @@
                 <input
                     type="hidden"
                     name="_subject"
-                    value="Nouveau message - FC ÉLITE"
+                    value="Nouveau message - JA Pléchâtel"
                 >
 
                 <input
@@ -262,10 +372,7 @@
                     value="table"
                 >
 
-                <!-- NOM -->
-                <label for="nom">
-                    Nom
-                </label>
+                <label for="nom">Nom</label>
 
                 <input
                     type="text"
@@ -276,10 +383,7 @@
                     required
                 >
 
-                <!-- EMAIL -->
-                <label for="email">
-                    Email
-                </label>
+                <label for="email">Email</label>
 
                 <input
                     type="email"
@@ -290,10 +394,7 @@
                     required
                 >
 
-                <!-- MESSAGE -->
-                <label for="message">
-                    Message
-                </label>
+                <label for="message">Message</label>
 
                 <textarea
                     id="message"
@@ -303,10 +404,10 @@
                     required
                 ></textarea>
 
-                <!-- BOUTON -->
                 <button
                     type="submit"
-                    class="contact-button">
+                    class="contact-button"
+                >
                     Envoyer
                 </button>
 
@@ -317,15 +418,20 @@
     </main>
 
     <!-- FOOTER -->
+
     <footer>
 
         <strong>
-            ⚽ FC <span>ÉLITE</span>
+            ⚽ JA <span>PLÉCHÂTEL</span>
         </strong>
 
         <p>
-            © <span id="year"></span>
-            FC ÉLITE — Tous droits réservés.
+            © <span id="year">2026</span>
+            JA Pléchâtel — Tous droits réservés.
+        </p>
+
+        <p class="muted" style="margin-top:12px;">
+            Informations sportives disponibles sur la FFF.
         </p>
 
     </footer>
