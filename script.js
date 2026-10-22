@@ -1,6 +1,6 @@
 
 /* ==============================
-   JA PLÉCHÂTEL - SCRIPT
+   FC PLÉCHÂTEL - SCRIPT
 ============================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,23 +20,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (boutonMenu && navigation) {
 
+        boutonMenu.setAttribute("aria-expanded", "false");
+
         boutonMenu.addEventListener("click", () => {
-            const ouvert =
-                boutonMenu.getAttribute("aria-expanded") === "true";
+
+            const ouvert = navigation.classList.toggle("open");
 
             boutonMenu.setAttribute(
                 "aria-expanded",
-                String(!ouvert)
+                String(ouvert)
             );
 
-            navigation.classList.toggle("active", !ouvert);
         });
 
+        // Fermer le menu après un clic sur un lien
+
         navigation.querySelectorAll("a").forEach(lien => {
+
             lien.addEventListener("click", () => {
-                navigation.classList.remove("active");
-                boutonMenu.setAttribute("aria-expanded", "false");
+
+                navigation.classList.remove("open");
+
+                boutonMenu.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
             });
+
+        });
+
+        // Fermer le menu avec Échap
+
+        document.addEventListener("keydown", (event) => {
+
+            if (event.key === "Escape") {
+
+                navigation.classList.remove("open");
+
+                boutonMenu.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
         });
 
     }
@@ -53,20 +81,25 @@ document.addEventListener("DOMContentLoaded", () => {
 ============================== */
 
 function afficher(id, valeur) {
+
     const element = document.getElementById(id);
 
     if (element) {
         element.textContent = valeur;
     }
+
 }
 
 function texteValide(valeur, defaut) {
+
     return typeof valeur === "string" && valeur.trim()
         ? valeur
         : defaut;
+
 }
 
 function formaterDate(valeur) {
+
     if (!valeur) return "Date à confirmer";
 
     const date = new Date(valeur);
@@ -79,6 +112,7 @@ function formaterDate(valeur) {
         dateStyle: "full",
         timeStyle: "short"
     });
+
 }
 
 
@@ -171,7 +205,10 @@ async function chargerMatchs() {
 
             afficher(
                 "dernier-resultat",
-                texteValide(dernier.competition, "Résultat officiel")
+                texteValide(
+                    dernier.competition,
+                    "Résultat officiel"
+                )
             );
 
         } else {

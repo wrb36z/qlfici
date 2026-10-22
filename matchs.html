@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchs | FC Pléchâtel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">⚽ FC <span>PLÉCHÂTEL</span></a>
+
+        <button class="menu-toggle" type="button"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false">☰</button>
+
+        <nav class="navigation">
+            <a href="index.html">Accueil</a>
+            <a href="matchs.html" aria-current="page">Matchs</a>
+            <a href="equipe.html">Équipes</a>
+            <a href="classement.html">Classement</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="index.html#actualites">Actualités</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="https://www.instagram.com/fc_pss/"
+               target="_blank" rel="noopener noreferrer">Instagram</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inner-hero">
+            <div class="inner-hero-content">
+                <p class="eyebrow">SAISON 2026 / 2027</p>
+                <h1>CHAQUE MATCH.<br><span>CHAQUE MINUTE.</span></h1>
+                <p>
+                    Suivez les prochaines rencontres
+                    et les derniers résultats de nos Seniors.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">SUR LE TERRAIN</p>
+                <h2>CALENDRIER & <span>RÉSULTATS</span></h2>
+            </div>
+
+            <div class="match-grid">
+                <article class="card match-card">
+                    <span class="tag">PROCHAIN MATCH</span>
+
+                    <p class="match-date" id="date-prochain-match">
+                        Calendrier en attente
+                    </p>
+
+                    <div class="versus">
+                        <strong id="equipe-domicile">FC PLÉCHÂTEL</strong>
+                        <span>VS</span>
+                        <strong id="equipe-exterieur">À CONFIRMER</strong>
+                    </div>
+
+                    <p class="muted" id="prochain-match"
+                       aria-live="polite">
+                        Chargement des données...
+                    </p>
+                </article>
+
+                <article class="card match-card">
+                    <span class="tag">DERNIER RÉSULTAT</span>
+
+                    <p class="match-date" id="date-dernier-match">
+                        Résultat en attente
+                    </p>
+
+                    <div class="versus">
+                        <strong id="resultat-domicile">FC PLÉCHÂTEL</strong>
+                        <span id="score-dernier-match">– : –</span>
+                        <strong id="resultat-exterieur">À CONFIRMER</strong>
+                    </div>
+
+                    <p class="muted" id="dernier-resultat"
+                       aria-live="polite">
+                        Chargement des données...
+                    </p>
+                </article>
+            </div>
+
+            <div class="inner-cta">
+                <p class="muted" id="maj-matchs">
+                    Données en attente de chargement.
+                </p>
+
+                <a class="btn"
+                   href="https://epreuves.fff.fr/competition/club/519202-jeanne-d-arc-plechatel/equipe/2026_6255_SEM_1/equipe"
+                   target="_blank" rel="noopener noreferrer">
+                    CALENDRIER OFFICIEL FFF →
+                </a>
+            </div>
+        </section>
+
+        <section class="section alternate">
+            <div class="section-heading">
+                <p class="eyebrow">CHAMPIONNAT</p>
+                <h2>ET AU <span>CLASSEMENT ?</span></h2>
+            </div>
+
+            <div class="card">
+                <h3 class="inner-card-title">
+                    SUIVEZ NOTRE PARCOURS
+                </h3>
+                <p class="inner-description">
+                    Retrouvez notre classement
+                    et les informations officielles
+                    de la saison.
+                </p>
+                <a href="classement.html" class="btn">
+                    VOIR LE CLASSEMENT →
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <strong>⚽ FC <span>PLÉCHÂTEL</span></strong>
+        <p>© <span id="year">2026</span> FC Pléchâtel — Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
