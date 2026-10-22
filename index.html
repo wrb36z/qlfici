@@ -10,127 +10,325 @@
 </head>
 <body>
 
-<header class="header">
-    <a href="#accueil" class="logo">⚽ FC <span>ÉLITE</span></a>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#accueil" class="logo">
+            ⚽ FC <span>ÉLITE</span>
+        </a>
 
-    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false">
+            ☰
+        </button>
 
-    <nav class="navigation">
-        <a href="#accueil">Accueil</a>
-        <a href="#matchs">Matchs</a>
-        <a href="#equipes">Équipes</a>
-        <a href="#actualites">Actualités</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+        <nav class="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#matchs">Matchs</a>
+            <a href="#equipes">Équipes</a>
+            <a href="#actualites">Actualités</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<main>
-    <section class="hero" id="accueil">
-        <div class="hero-content">
-            <p class="eyebrow">BIENVENUE SUR LE SITE OFFICIEL</p>
-            <h1>UNE ÉQUIPE.<br><span>UNE PASSION.</span></h1>
-            <p>Plus qu'un club, une famille. Ensemble, défendons nos couleurs.</p>
-            <a href="#matchs" class="btn">DÉCOUVRIR NOS MATCHS →</a>
-        </div>
-    </section>
+    <main>
 
-    <section class="section" id="matchs">
-        <div class="section-heading">
-            <p class="eyebrow">SUR LE TERRAIN</p>
-            <h2>NOS <span>MATCHS</span></h2>
-        </div>
+        <!-- ACCUEIL -->
+        <section class="hero" id="accueil">
+            <div class="hero-content">
 
-        <div class="match-grid">
-            <article class="card match-card">
-                <span class="tag">PROCHAIN MATCH</span>
-                <p class="match-date">Date à confirmer</p>
-                <div class="versus">
-                    <strong>FC ÉLITE</strong>
-                    <span>VS</span>
-                    <strong>ADVERSAIRE</strong>
-                </div>
-                <p class="muted">Stade à confirmer</p>
-            </article>
+                <p class="eyebrow">
+                    BIENVENUE SUR LE SITE OFFICIEL
+                </p>
 
-            <article class="card match-card">
-                <span class="tag">DERNIER RÉSULTAT</span>
-                <p class="match-date">Match à renseigner</p>
-                <div class="versus">
-                    <strong>FC ÉLITE</strong>
-                    <span>– : –</span>
-                    <strong>ADVERSAIRE</strong>
-                </div>
-                <p class="muted">Résultat à venir</p>
-            </article>
-        </div>
-    </section>
+                <h1>
+                    UNE ÉQUIPE.<br>
+                    <span>UNE PASSION.</span>
+                </h1>
 
-    <section class="section alternate" id="equipes">
-        <div class="section-heading">
-            <p class="eyebrow">NOS JOUEURS</p>
-            <h2>NOS <span>ÉQUIPES</span></h2>
-        </div>
+                <p>
+                    Plus qu'un club, une famille.
+                    Ensemble, défendons nos couleurs.
+                </p>
 
-        <div class="team-grid">
-            <article class="team-card">
-                <div class="team-image seniors"></div>
-                <div class="team-info">
-                    <h3>SÉNIORS</h3>
-                    <p>Découvrez notre équipe première.</p>
-                </div>
-            </article>
+                <a href="#matchs" class="btn">
+                    DÉCOUVRIR NOS MATCHS →
+                </a>
 
-            <article class="team-card">
-                <div class="team-image jeunes"></div>
-                <div class="team-info">
-                    <h3>JEUNES</h3>
-                    <p>La relève de notre club.</p>
-                </div>
-            </article>
+            </div>
+        </section>
 
-            <article class="team-card">
-                <div class="team-image staff"></div>
-                <div class="team-info">
-                    <h3>STAFF</h3>
-                    <p>Ceux qui accompagnent nos joueurs.</p>
-                </div>
-            </article>
-        </div>
-    </section>
+        <!-- MATCHS -->
+        <section class="section" id="matchs">
 
-    <section class="section" id="actualites">
-        <div class="section-heading">
-            <p class="eyebrow">LA VIE DU CLUB</p>
-            <h2>DERNIÈRES <span>ACTUALITÉS</span></h2>
-        </div>
+            <div class="section-heading">
+                <p class="eyebrow">SUR LE TERRAIN</p>
+                <h2>NOS <span>MATCHS</span></h2>
+            </div>
 
-        <div class="news-grid">
-            <article class="card news-card">
-                <span class="tag">CLUB</span>
-                <h3>Bienvenue sur notre nouveau site !</h3>
-                <p>Retrouvez prochainement toutes les informations du club.</p>
-            </article>
+            <div class="match-grid">
 
-            <article class="card news-card">
-                <span class="tag">MATCHS</span>
-                <h3>Le calendrier arrive bientôt</h3>
-                <p>Suivez les prochaines rencontres de nos équipes.</p>
-            </article>
-        </div>
-    </section>
+                <!-- PROCHAIN MATCH -->
+                <article class="card match-card">
 
-    <section class="contact-section" id="contact">
-        <p class="eyebrow">REJOIGNEZ L'AVENTURE</p>
-        <h2>ENSEMBLE, <span>PLUS FORTS.</span></h2>
-        <p>Envie de rejoindre notre club ? Contactez-nous !</p>
-        <a class="btn" href="mailto:contact@exemple.fr">NOUS CONTACTER →</a>
-    </section>
-</main>
+                    <span class="tag">
+                        PROCHAIN MATCH
+                    </span>
 
-<footer>
-    <strong>⚽ FC <span>ÉLITE</span></strong>
-    <p>© <span id="year"></span> FC ÉLITE — Tous droits réservés.</p>
-</footer>
+                    <p class="match-date">
+                        Date à confirmer
+                    </p>
+
+                    <div class="versus">
+                        <strong>FC ÉLITE</strong>
+                        <span>VS</span>
+                        <strong>ADVERSAIRE</strong>
+                    </div>
+
+                    <p class="muted">
+                        Stade à confirmer
+                    </p>
+
+                </article>
+
+                <!-- DERNIER RÉSULTAT -->
+                <article class="card match-card">
+
+                    <span class="tag">
+                        DERNIER RÉSULTAT
+                    </span>
+
+                    <p class="match-date">
+                        Match à renseigner
+                    </p>
+
+                    <div class="versus">
+                        <strong>FC ÉLITE</strong>
+                        <span>– : –</span>
+                        <strong>ADVERSAIRE</strong>
+                    </div>
+
+                    <p class="muted">
+                        Résultat à venir
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ÉQUIPES -->
+        <section class="section alternate" id="equipes">
+
+            <div class="section-heading">
+                <p class="eyebrow">NOTRE CLUB</p>
+                <h2>NOS <span>ÉQUIPES</span></h2>
+            </div>
+
+            <div class="team-grid">
+
+                <!-- SENIORS -->
+                <article class="team-card">
+
+                    <div class="team-image seniors"></div>
+
+                    <div class="team-info">
+
+                        <span class="tag">
+                            ÉQUIPE PREMIÈRE
+                        </span>
+
+                        <h3>SENIORS</h3>
+
+                        <p>
+                            Découvrez notre équipe Seniors,
+                            les joueurs qui défendent les
+                            couleurs du club chaque week-end.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- STAFF -->
+                <article class="team-card">
+
+                    <div class="team-image staff"></div>
+
+                    <div class="team-info">
+
+                        <span class="tag">
+                            ENCADREMENT
+                        </span>
+
+                        <h3>STAFF</h3>
+
+                        <p>
+                            Découvrez les entraîneurs et
+                            les membres du staff qui
+                            accompagnent notre équipe
+                            tout au long de la saison.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ACTUALITÉS -->
+        <section class="section" id="actualites">
+
+            <div class="section-heading">
+                <p class="eyebrow">LA VIE DU CLUB</p>
+
+                <h2>
+                    DERNIÈRES <span>ACTUALITÉS</span>
+                </h2>
+            </div>
+
+            <div class="news-grid">
+
+                <!-- ACTUALITÉ 1 -->
+                <article class="card news-card">
+
+                    <span class="tag">CLUB</span>
+
+                    <h3>
+                        Bienvenue sur notre nouveau site !
+                    </h3>
+
+                    <p>
+                        Retrouvez prochainement toutes
+                        les informations du club.
+                    </p>
+
+                </article>
+
+                <!-- ACTUALITÉ 2 -->
+                <article class="card news-card">
+
+                    <span class="tag">MATCHS</span>
+
+                    <h3>
+                        Le calendrier arrive bientôt
+                    </h3>
+
+                    <p>
+                        Suivez les prochaines rencontres
+                        de notre équipe Seniors.
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+
+            <h2 class="contact-title">
+                NOUS CONTACTER
+            </h2>
+
+            <p class="contact-subtitle">
+                Une question ? Envoie-nous un message !
+            </p>
+
+            <form
+                class="contact-form"
+                action="https://formsubmit.co/rabezarabryan@gmail.com"
+                method="POST"
+            >
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="Nouveau message - FC ÉLITE"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="true"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+                <!-- NOM -->
+                <label for="nom">
+                    Nom
+                </label>
+
+                <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Votre nom"
+                    autocomplete="name"
+                    required
+                >
+
+                <!-- EMAIL -->
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Votre adresse email"
+                    autocomplete="email"
+                    required
+                >
+
+                <!-- MESSAGE -->
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Écrivez votre message ici..."
+                    required
+                ></textarea>
+
+                <!-- BOUTON -->
+                <button
+                    type="submit"
+                    class="contact-button">
+                    Envoyer
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <strong>
+            ⚽ FC <span>ÉLITE</span>
+        </strong>
+
+        <p>
+            © <span id="year"></span>
+            FC ÉLITE — Tous droits réservés.
+        </p>
+
+    </footer>
 
 </body>
 </html>
