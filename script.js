@@ -1,37 +1,19 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.getElementById("menu-toggle");
-    const pages = document.getElementById("pages");
+const menuButton = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".navigation");
 
-    if (!menuToggle || !pages) return;
+menuButton.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.textContent = isOpen ? "✕" : "☰";
+});
 
-    menuToggle.addEventListener("click", () => {
-        const isOpen = pages.classList.toggle("is-open");
-
-        menuToggle.setAttribute("aria-expanded", isOpen);
-        menuToggle.setAttribute(
-            "aria-label",
-            isOpen ? "Fermer le menu" : "Ouvrir le menu"
-        );
-
-        menuToggle.textContent = isOpen ? "✕" : "☰";
-    });
-
-    pages.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-            pages.classList.remove("is-open");
-            menuToggle.setAttribute("aria-expanded", "false");
-            menuToggle.setAttribute("aria-label", "Ouvrir le menu");
-            menuToggle.textContent = "☰";
-        });
-    });
-
-    document.addEventListener("keydown", event => {
-        if (event.key === "Escape") {
-            pages.classList.remove("is-open");
-            menuToggle.setAttribute("aria-expanded", "false");
-            menuToggle.setAttribute("aria-label", "Ouvrir le menu");
-            menuToggle.textContent = "☰";
-        }
+document.querySelectorAll(".navigation a").forEach(link => {
+    link.addEventListener("click", () => {
+        navigation.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.textContent = "☰";
     });
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
